@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maha Shivratri</title>
+	<script type="text/javascript" src="aframe.min.js"></script>
+	<script type="text/javascript" src="aframe-particle-system-component.min.js"></script>
+	<script type="text/javascript" src="aframe-animation-component.min.js"></script>
+</head>
+<body>
+		<a-scene>
+				<a-assets>
+						<audio id="shivlehri" src="shivasong.mp3" autoplay="true" loop="true">
+						<img id="grass" src="grass.jpg">
+						<img id="sky" src="sky.jpg">
+						<img id="floor" src="floor.jpg">
+						<img id="poll" src="poll.jpg">
+						<img id="shiva" src="bhole.jpg">
+						<img id="jalehri" src="jal.jpg">
+						<img id="jyot1" src="jyot1.jpg">
+						<img id="jyot2" src="jyot2.jpg">
+						<img id="jyot3" src="jyot3.jpg">
+						<img id="jyot4" src="jyot4.jpg">
+						<img id="jyot5" src="jyot5.jpg">
+						<img id="jyot6" src="jyot6.jpg">
+						<img id="jyot7" src="jyot7.jpg">
+						<img id="jyot8" src="jyot8.jpg">
+						<img id="jyot9" src="jyot9.jpg">
+						<img id="jyot10" src="jyot10.jpg">
+						<img id="jyot11" src="jyot11.jpg">
+						<img id="jyot12" src="jyot12.jpg">
+						<img id="hrhrmdev" src="hrhr.jpg">
+						<a-asset-item id="nandi" src="scene.gltf"></a-asset-item>
+						<a-asset-item id="flowers" src="fscene.gltf"></a-asset-item>
+				</a-assets>
+				<a-camera>
+					<a-cursor></a-cursor>
+				</a-camera>
+
+				<a-sky src="#sky"></a-sky>
+
+				<!--			-->
+					<a-box position="-15 15 -30" radius="2.5" src="#hrhrmdev" width="8" height="8" animation="property: scale; dir: alternate; dur: 1000; to: 1.1 1.1 1.1; loop: true"></a-box>
+					
+				<!--	name of jyotirlingas		-->
+					<a-box position="5 2 42" src="#jyot1" width="3" height="3" depth="2"></a-box>
+					<a-box position="5 2 22" src="#jyot2" width="3" height="3" depth="2"></a-box>
+					<a-box position="5 2 2" src="#jyot3" width="3" height="3" depth="2"></a-box>
+					<a-box position="5 2 -18" src="#jyot4" width="3" height="3" depth="2"></a-box>
+					<a-box position="5 2 -38" src="#jyot5" width="3" height="3" depth="2"></a-box>
+					<a-box position="5 2 -58" src="#jyot6" width="3" height="3" depth="2"></a-box>
+
+					<a-box position="-35 2 42" src="#jyot7" width="3" height="3" depth="2"></a-box>
+					<a-box position="-35 2 22" src="#jyot8" width="3" height="3" depth="2"></a-box>
+					<a-box position="-35 2 2" src="#jyot9" width="3" height="3" depth="2"></a-box>
+					<a-box position="-35 2 -18" src="#jyot10" width="3" height="3" depth="2"></a-box>
+					<a-box position="-35 2 -38" src="#jyot11" width="3" height="3" depth="2"></a-box>
+					<a-box position="-35 2 -58" src="#jyot12" width="3" height="3" depth="2"></a-box>
+
+
+				<!--	particle system		-->
+
+		      		<a-entity particle-system="preset: default; color:#800080; particleCount: 1200" position="15 0 -50"></a-entity>
+		      		<a-entity particle-system="preset: default; color: magenta; particleCount: 1200" position="15 0 40" ></a-entity>
+		      		<a-entity particle-system="preset: default; color: yellow; particleCount: 1200" position="15 0 20"></a-entity>
+		      		<a-entity particle-system="preset: default; color: red; particleCount: 1200" position="15 0 10"></a-entity>
+		      		<a-entity particle-system="preset: default; color: orange; particleCount: 1200" position="15 0 -10"></a-entity>
+		      		<a-entity particle-system="preset: default; color: white; particleCount: 1200" position="15 0 -30"></a-entity>
+
+
+		      		<a-entity particle-system="preset: default; color:white; particleCount: 1200" position="-45 0 -50"></a-entity>
+		      		<a-entity particle-system="preset: default; color: red; particleCount: 1200" position="-45 0 40" ></a-entity>
+		      		<a-entity particle-system="preset: default; color: yellow; particleCount: 1200" position="-45 0 20"></a-entity>
+		      		<a-entity particle-system="preset: default; color: magenta; particleCount: 1200" position="-45 0 10"></a-entity>
+		      		<a-entity particle-system="preset: default; color: orange; particleCount: 1200" position="-45 0 -10"></a-entity>
+		      		<a-entity particle-system="preset: default; color: #800080; particleCount: 1200" position="-45 0 -30"></a-entity>
+
+				<!-- 	flower on the right side		-->
+
+				
+				<a-entity position="24 0 55" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 45" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 35" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 25" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 15" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 -5" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 -15" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 -25" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				<a-entity position="24 0 -35" gltf-model="#flowers" rotation="0 180 0"></a-entity>
+				
+
+				<!-- 	flower on the left side		-->
+				
+				
+				<a-entity position="-54 0 -55" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -75" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -85" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -95" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -5" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -15" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -25" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				<a-entity position="-54 0 -35" gltf-model="#flowers" rotation="0 0 0"></a-entity>
+				
+
+				<!--	ground 		-->
+
+				<a-box position="0 -2 35" rotation="-90 0 0" width="1200" height="1200" src="#grass" repeat="200 200" sound="src:#shivlehri; autoplay:true; loop:true"></a-box>
+				
+				<!--	shivlinga 1		-->
+
+				<a-sphere position="12 2.5 34" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 2	-->
+
+				<a-sphere position="-43 2.5 34" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 34" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!--	shivlinga 3		-->
+
+				<a-sphere position="12 2.5 14" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 4	-->
+
+				<a-sphere position="-43 2.5 14" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 14" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+
+
+				<!--	shivlinga 5		-->
+
+				<a-sphere position="12 2.5 -6" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 6	-->
+
+				<a-sphere position="-43 2.5 -6" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 -6" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!--	shivlinga 7		-->
+
+				<a-sphere position="12 2.5 -26" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 8	-->
+
+				<a-sphere position="-43 2.5 -26" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 -26" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+
+				<!--	shivlinga 9		-->
+
+				<a-sphere position="12 2.5 -46" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 10	-->
+
+				<a-sphere position="-43 2.5 -46" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 -46" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!--	shivlinga 11		-->
+
+				<a-sphere position="12 2.5 -66" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 2 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.9 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.8 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="12 1.7 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				<!-- 	shivlinga 12	-->
+
+				<a-sphere position="-43 2.5 -66" scale="0.5 1 0.5" radius="1" src="#shiva"></a-sphere>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 2 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.9 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.8 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				<a-torus arc="360" src="#jalehri" height="2" radius="1.5" position="-43 1.7 -66" rotation="-90 0 0" scale="1 0.5 0.5"></a-torus>
+				
+				
+
+
+		<!--	temple 1	-->
+
+				<a-entity position="8 0.6 35" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 -2" rotation="0 0 0" gltf-model="#shivji"></a-entity>
+				
+				<a-box position="11 0 33" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 37" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 37" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 29" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 29" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 33" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 33" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 2	-->
+
+				<a-entity position="-38 0.6 35" rotation="0 300 0" gltf-model="#nandi"></a-entity>
+				
+				<a-box position="-41 0 33" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 33" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 37" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 37" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 29" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 29" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 33" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 33" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+
+		<!--	temple 3	-->
+
+				<a-entity position="8 0.6 15" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 15" gltf-model="#linga"></a-entity>
+				
+				<a-box position="11 0 13" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 17" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 17" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 9" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 9" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 13" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 13" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 4	-->
+
+				<a-entity position="-38 0.6 15" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0 0 17" gltf-model="#linga"></a-entity>
+				
+				<a-box position="-41 0 13" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 13" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 17" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 17" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 9" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 9" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 13" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 13" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 5	-->
+
+				<a-entity position="8 0.6 -5" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 -5" gltf-model="#linga"></a-entity>
+				
+				<a-box position="11 0 -7" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 -7" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 -7" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 -7" rotation="-90 0 0" width="10" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 -3" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -3" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 -11" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -11" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 -7" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 -7" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 6	-->
+
+				<a-entity position="-38 0.6 -5" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0 0 -3" gltf-model="#linga"></a-entity>
+				
+				<a-box position="-41 0 -7" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 -7" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 -7" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 -7" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 -3" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -3" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 -11" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -11" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 -7" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 -7" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+
+		<!--	temple 7	-->
+
+				<a-entity position="8 0.6 -25" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 -25" gltf-model="#linga"></a-entity>
+				
+				<a-box position="11 0 -27" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 -23" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -23" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 -31" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -31" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 -27" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 -27" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 8	-->
+
+				<a-entity position="-38 0.6 -25" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0 0 -23" gltf-model="#linga"></a-entity>
+				
+				<a-box position="-41 0 -27" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 -27" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 -23" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -23" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 -31" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -31" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 -27" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 -27" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+		<!--	temple 9	-->
+
+				<a-entity position="8 0.6 -45" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 -45" gltf-model="#linga"></a-entity>
+				
+				<a-box position="11 0 -47" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 -43" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -43" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 -51" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -51" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 -47" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 -47" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 10	-->
+
+				<a-entity position="-38 0.6 -45" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0 0 -43" gltf-model="#linga"></a-entity>
+				
+				<a-box position="-41 0 -47" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 -47" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 -43" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -43" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 -51" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -51" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 -47" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 -47" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+		<!--	temple 11	-->
+
+				<a-entity position="8 0.6 -65" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0  1 -65" gltf-model="#linga"></a-entity>
+				
+				<a-box position="11 0 -67" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="2 -1.5 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="4 -0.5 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="6 0.3 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="5 0 -63" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -63" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="5 0 -71" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="17 0 -71" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="11 8 -67" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="12 12.5 -67" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+	<!--	temple 12	-->
+
+				<a-entity position="-38 0.6 -65" rotation="0 150 0" gltf-model="#nandi"></a-entity>
+				<a-entity position="0 0 -63" gltf-model="#linga"></a-entity>
+				
+				<a-box position="-41 0 -67" rotation="-90 0 0" width="15" height="10" depth="3" src="#floor"></a-box>
+				<a-box position="-32 -1.5 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-34 -0.5 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+				<a-box position="-36 0.3 -67" rotation="-90 0 0" width="9" height="10" src="#floor"></a-box>
+
+				<a-cylinder position="-35 0 -63" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -63" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-35 0 -71" radius="0.5" height="15" src="#poll"></a-cylinder>
+				<a-cylinder position="-47 0 -71" radius="0.5" height="15" src="#poll"></a-cylinder>
+
+				
+				<a-box position="-41 8 -67" rotation="-90 0 0" width="15" height="10" src="#floor"></a-box>
+				<a-cone position="-42 12.5 -67" src="#floor" radius-top="0" radius-bottom="5" height="8"></a-cone>
+		
+
+		</a-scene>
+</body>
+</html>
